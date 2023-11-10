@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<title>JavaScript Tutorial</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="Javascript Tutorial - Learn Javascript in simple and easy steps. A beginner's tutorial containing complete knowledge of Javascript Syntax Objects Embedding with HTML Validations Cookies Regular Expressions Literals Variables Loops Conditions." /> 
+<meta name="keywords" content="Javascript, Tutorials, Learning, Beginners, Javascript Basics, Scripting Language, Javascript Tutorials, Functions, Objects, Usage." />
+<link rel="SHORTCUT ICON" href="../img/logo.png" />
+<link rel="stylesheet" href="../cs/first.css">
+<link rel="stylesheet" href="../cs/second.css">
+<link rel="stylesheet" href="../cs/w3.css">
+<link rel="stylesheet" href="../cs/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="../cs/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="../index.html" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="../index.html#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="../index.html#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="../index.html#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="../index.html#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:green;letter-spacing:2px;word-spacig:5px"><marquee>Learn JavaScript</marquee></b></h4>
+  <a href="index.html#" class="w3-hover-green"><li>JavaScript Overview</li></a>
+  <a href="javascript_introduction.html" class="w3-hover-green"><li>JavaScript Introduction</li></a>
+  <a href="javascript_declaration.html" class="w3-hover-green"><li>JavaScript Where declare</li></a>
+  <a href="javascript_syntax.html" class="w3-hover-green"><li>JavaScript Syntax</li></a>
+  <a href="javascript_output.html" class="w3-hover-green"><li>JavaScript Output</li></a>
+  <a href="javascript_comments.html" class="w3-hover-green"><li>JavaScript Comments</li></a>
+  <a href="javascript_variables.html" class="w3-hover-green"><li>JavaScript Variables</li></a>
+  <a href="javascript_operators.html" class="w3-hover-green"><li>JavaScript Operators</li></a>
+  <a href="javascript_statements.html" class="w3-hover-green"><li>JavaScript Statements</li></a>
+  <a href="javascript_arithmetic.html" class="w3-hover-green"><li>JavaScript Arithmetic</li></a>
+  <a href="javascript_assignment.html" class="w3-hover-green"><li>JavaScript Assignment</li></a>
+  <a href="javascript_functions.html" class="w3-hover-green"><li>JavaScript Functions</li></a>
+  <a href="javascript_formvalidation.html" class="w3-hover-green"><li>JavaScript Form Validation</li></a>
+  <a href="javascript_objects.html" class="w3-hover-green"><li>JavaScript Objects</li></a>
+  <a href="javascript_datatypes.html" class="w3-hover-green"><li>JavaScript Data Types</li></a>
+  <a href="javascript_events.html" class="w3-hover-green"><li>JavaScript Events</li></a>
+  <a href="javascript_scope.html" class="w3-hover-green"><li>JavaScript Scope</li></a>
+  <a href="javascript_strings.html" class="w3-hover-green"><li>JavaScript Strings</li></a>
+  <a href="https://vetbossel.in/beginner-tutorial-website/javascript/javascript_string_methods.html" class="w3-hover-green"><li>JavaScript String Methods</li></a>
+  <a href="javascript_numbers.html" class="w3-hover-green"><li>JavaScript Numbers</li></a>
+  <a href="https://vetbossel.in/beginner-tutorial-website/javascript/javascript_number_methods.html" class="w3-hover-green"><li>JavaScript Number Methods</li></a>
+  <a href="javascript_math.html" class="w3-hover-green"><li>JavaScript Math</li></a>
+  <a href="javascript_dates.html" class="w3-hover-green"><li>JavaScript Dates</li></a>
+  <a href="javascript_arrays.html" class="w3-hover-green"><li>JavaScript Arrays</li></a>
+  <a href="javascript_array_methods.html" class="w3-hover-green"><li>JavaScript Array Methods</li></a>
+  <a href="javascript_booleans.html" class="w3-hover-green"><li>JavaScript Booleans</li></a>
+  <a href="javascript_comparisons.html" class="w3-hover-green"><li>JavaScript Comparisons</li></a>
+  <a href="javascript_conditions.html" class="w3-hover-green"><li>JavaScript Conditions</li></a>
+  <a href="javascript_switch.html" class="w3-hover-green"><li>JavaScript Switch</li></a>
+  <a href="javascript_loop_for.html" class="w3-hover-green"><li>JavaScript Loop For</li></a>
+  <a href="javascript_loop_while.html" class="w3-hover-green"><li>JavaScript Loop While</li></a>
+  <a href="javascript_break.html" class="w3-hover-green"><li>JavaScript Break</li></a>
+  <a href="javascript_type_conversion.html" class="w3-hover-green"><li>JavaScript Type Conversion</li></a>
+  <a href="javascript_regexp.html" class="w3-hover-green"><li>JavaScript RegExp</li></a>
+  <a href="javascript_errors.html" class="w3-hover-green"><li>JavaScript Errors</li></a>
+  <a href="javascript_debugging.html" class="w3-hover-green"><li>JavaScript Debugging</li></a>
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+<div><img src="../img/js.png" style="margin-left:270px;margin-top:30px;"/></div>
+<!--end sidenav-->
+
+<div class="w3-main" style="margin-left:450px;margin-top:-235px;font-family:'Segoe UI',Arial,sans-serif;font-size:18px;letter-spacing:0.2px">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <p>JavaScript is a lightweight, interpreted programming language</p>
+	  <p>JavaScript integrated with HTML, so very easy to implement</p>
+	  <p>Javascript is a dynamic computer programming language</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:16px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <p><h1>Overview of JavaScript</h1></p>
+	        <p style="text-indent:50px;margin-top:-10px">JavaScript is a lightweight, interpreted programming language. JavaScript is designed for creating network-centric applications.
+			  It is complimentary to and integrated with Java. JavaScript is very easy to implement because it is integrated with HTML language. It is open and cross-platform.</p> 
+            <p style="text-indent:50px">JavaScript was first known as LiveScript, but Netscape changed its name to JavaScript, possibly because of the excitement being generated by Java.
+			  JavaScript made its first appearance in Netscape 2.0 in 1995 with the name LiveScript. The general-purpose core of the language has been embedded in Netscape, Internet Explorer, and other web browsers.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown">&lt;script&gt;</span> <br>
+<span style="color:brown">function</span> <span style="color:black">myFunction()&nbsp;{</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:brown">var</span> <span style="color:black">x = document.getElementById(</span><span style="color:blue">"demo"</span><span style="color:black">)</span>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:black">x.style.fontSize = </span> <span style="color:blue">"23px";</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:black">x.style.color = </span> <span style="color:blue">"green";</span><br>
+<span style="color:brown">}</span> <br>
+<span style="color:brown">&lt;/script&gt;</span>
+</div>
+<a target="_blank" class="w3-jo w3-margin-bottom" href="tryit/one.html">Run the file &raquo;</a>
+</div><hr>
+</div>
+</div>
+</div>
+<div class="w3-main" style="margin-left:250px;margin-top:-100px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			  <p><h2>Why Learn JavaScript</h2></p>
+	         <p>JavaScript is one of the 3 languages all web developers must learn</p>
+			 <p>&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;<i>HTML</i> to define the content of web pages</p>
+			 <p>&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;<i>CSS</i> to specify the layout of web pages</p>
+			 <p>&nbsp;&nbsp;&nbsp;&nbsp;3.&nbsp;<i>JavaScript</i> to program the behavior of web pages</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown">&lt;script&gt;</span> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:brown">document.</span><span style="color:red">write</span><span style="color:blue">("Hello world");</span><br>
+<span style="color:brown">&lt;/script&gt;</span>
+</div>
+<a target="_blank" class="w3-jo w3-margin-bottom" href="tryit/two.html">Run the file &raquo;</a>
+</div><br>
+<div class="nav">
+<div class="next"><a class="chapter" href="javascript_introduction.html">Next Page&raquo;</a></div>
+</div><hr>
+</div>
+</div>
+</div>
+<!--strat inspirational-->
+<div class="w3-container" style="margin-left:250px">
+  <h2 style="letter-spacing:2px">Inspirational Quotes</h2>
+  <p style="letter-spacing:2px"><marquee>This specially created for students to grow the <b>self confidence</b> for learning.</marquee></p>
+</div>
+
+<ul class="w3-ul w3-card-4" style="margin-left:250px">
+  <li class="w3-padding-16">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+    <img src="https://vetbossel.in/beginner-tutorial-website/javascript/swami-vivekananda.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-xlarge" style="letter-spacing:1px">Swami Vivekananda</span><br><br/>
+    <span style="font-size:18px;letter-spacing:1.5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>"All power's within you; you can do anything and everything"</i></span>
+  </li>
+</ul><br/><br/><br/>
+
+<ul class="w3-ul w3-card-4" style="margin-left:250px">
+  <li class="w3-padding-16">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+    <img src="https://vetbossel.in/beginner-tutorial-website/javascript/abdul.jpg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-xlarge" style="letter-spacing:1px">A.P.J Abdul Kalam</span><br><br/>
+    <span style="font-size:18px;letter-spacing:1.5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Success is when your "Signature" changes to "Autograph".</i></span>
+  </li>
+</ul><br/><br/><br/>
+
+<ul class="w3-ul w3-card-4" style="margin-left:250px">
+  <li class="w3-padding-16">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+    <img src="https://vetbossel.in/beginner-tutorial-website/javascript/albert.jpg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-xlarge" style="letter-spacing:1px">Albert Einstein</span><br><br/>
+    <span style="font-size:18px;letter-spacing:1.5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>"Life is like riding bicycle. To keep your balance, you must keep moving."</i></span>
+  </li>
+</ul><br/><br/><br/>
+
+<ul class="w3-ul w3-card-4" style="margin-left:250px">
+  <li class="w3-padding-16">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+    <img src="https://vetbossel.in/beginner-tutorial-website/javascript/steve-jobs.jpg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-xlarge" style="letter-spacing:1px">Steve Jobs</span><br><br/>
+    <span style="font-size:18px;letter-spacing:1.5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>"Your time is limited, so dont's waste it living someone else's life."</i></span>
+  </li>
+</ul><hr>
+<!--end inspirational-->
+<!--end coding box-->
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+</html>

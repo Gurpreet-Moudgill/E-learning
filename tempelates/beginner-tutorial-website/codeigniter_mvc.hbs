@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>Codeigniter MVC Framework</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="CodeIgniter Tutorial - Learn CodeIgniter starting from Overview, Installing CodeIgniter, MVC Framework, Basic Concepts, Configuration, Working with Database, Libraries, Error Handling, File Uploading, Sending Email, Form Validation, Session Management, Flashdata, Tempdata, Cookie Management, Common Functions, Page Caching, Page Redirection, Application Profiling, Benchmarking, Adding JS and CSS, Internationalization, Security." /> 
+<meta name="keywords" content="CodeIgniter, Tutorial, Overview, Installing CodeIgniter, Application Architecture, MVC Framework, Basic Concepts, Configuration, Working with Database, Libraries, Error Handling, File Uploading, Sending Email, Form Validation, Session Management, Flashdata, Tempdata, Cookie Management, Common Functions, Page Caching, Page Redirection, Application Profiling, Benchmarking, Adding JS and CSS, Internationalization, Security." />
+<link rel="SHORTCUT ICON" href="logo.png" />
+<link rel="stylesheet" href="/first.css">
+<link rel="stylesheet" href="/second.css">
+<link rel="stylesheet" href="/w3.css">
+<link rel="stylesheet" href="/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="index" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="index#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="index#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="index#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="index#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn CodeIgniter</b></h4>
+  <a href="code" class="w3-hover-black"><li>CodeIgniter Overview</li></a>
+  <a href="codeigniter_introduction" class="w3-hover-black"><li>CodeIgniter Introduction</li></a>
+  <a href="codeigniter_mvc#" class="w3-hover-black"><li>CodeIgniter MVC</li></a>
+  <a href="codeigniter_basics" class="w3-hover-black"><li>CodeIgniter Basics</li></a>
+  <a href="codeigniter_configuration" class="w3-hover-black"><li>CodeIgniter Configuration</li></a>
+  <a href="codeigniter_database" class="w3-hover-black"><li>CodeIgniter Connect DB</li></a>
+  <a href="codeigniter_libraries" class="w3-hover-black"><li>CodeIgniter Libraries</li></a>
+  <a href="codeigniter_file_uploading" class="w3-hover-black"><li>CodeIgniter File Uploading</li></a>
+  <a href="codeigniter_form_validation" class="w3-hover-black"><li>CodeIgniter Form validation</li></a>
+  <a href="codeigniter_session" class="w3-hover-black"><li>CodeIgniter Session</li></a>
+  <a href="codeigniter_cookie" class="w3-hover-black"><li>CodeIgniter Cookie</li></a>
+  <a href="codeigniter_security" class="w3-hover-black"><li>CodeIgniter Security</li></a>
+  
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+
+<div class="w3-main" style="margin-left:250px;margin-top:-50px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>CodeIgniter MVC Framework</h1>
+	        <p style="margin-top:-10px">CodeIgniter is based on the Model-View-Controller (MVC) development pattern. MVC is a software approach that separates application
+			logic from presentation. In practice, it permits your web pages to contain minimal scripting since the presentation is separate from the PHP scripting.</p>
+		    <div><img src="mvc.png" style="margin-left:250px;margin-top:30px;"/></div>
+			<h2>Model</h2>
+			<p style="margin-top:-10px">The Model represents your data structures. Typically, your model classes will contain functions that help you retrieve, 
+			insert and update information in your database.</p>
+			<h2>View</h2>
+			<p style="margin-top:-10px">The View is information that is being presented to a user. A View will normally be a web page, but in CodeIgniter, a view can also be a page
+			 fragment like a header or footer. It can also be an RSS page, or any other type of page.</p>
+			 <h2>Controller</h2>
+			 <p style="margin-top:-10px">The Controller serves as an intermediary between the Model, the View, and any other resources needed to process the HTTP request and 
+			 generate a web page.</p>
+		</div>
+    </div>
+</div><br>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class="nav">
+<div class="prev"><a class="chapter" href="https://vetbossel.in/beginner-tutorial-website/codeigniter/codeigniter_introduction">&laquo; Previous Page</a></div>
+<div class="next"><a class="chapter" href="codeigniter_basics">Next Page&raquo;</a></div>
+</div><hr>
+</div>
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+</html>

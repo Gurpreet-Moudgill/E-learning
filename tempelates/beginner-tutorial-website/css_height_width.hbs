@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<title>CSS Height and Width</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="CSS Tutorial - CSS Tutorials for beginners to advanced developers Learning Cascading Style Sheet in simple and easy steps with examples. A complete reference manual for CSS2 & CSS3 properties." />
+<meta name="keywords" content="CSS, Tutorials, Learning, Beginners, CSS, Basics, Advanced, Cascading Style Sheet, CSS2, CSS3, Properties, HTMl, XHTML, Reference, Manual." />
+<link rel="SHORTCUT ICON" href="/logo.png" />
+<link rel="stylesheet" href="/first.css">
+<link rel="stylesheet" href="/second.css">
+<link rel="stylesheet" href="/w3.css">
+<link rel="stylesheet" href="/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="index" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="index#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="index#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="index#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="index#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn CSS</b></h4>
+  <a href="css" class="w3-hover-black"><li>CSS Overview</li></a>
+  <a href="css_introduction" class="w3-hover-black"><li>CSS Introduction</li></a>
+  <a href="css_syntax" class="w3-hover-black"><li>CSS Syntax</li></a>
+  <a href="css_ways" class="w3-hover-black"><li>CSS Ways</li></a>
+  <a href="css_backgrounds" class="w3-hover-black"><li>CSS Backgrounds</li></a>
+  <a href="css_borders" class="w3-hover-black"><li>CSS Borders</li></a>
+  <a href="css_box_model" class="w3-hover-black"><li>CSS Box Model</li></a>
+  <a href="css_display" class="w3-hover-black"><li>CSS Display</li></a>
+  <a href="css_float" class="w3-hover-black"><li>CSS Float</li></a>
+  <a href="css_forms" class="w3-hover-black"><li>CSS Forms</li></a>
+  <a href="https://vetbossel.in/beginner-tutorial-website/css/css_margin" class="w3-hover-black"><li>CSS Margins</li></a>
+  <a href="css_padding" class="w3-hover-black"><li>CSS Padding</li></a>
+  <a href="css_height_width#" class="w3-hover-black"><li>CSS Height/Width</li></a>
+  <a href="css_text" class="w3-hover-black"><li>CSS Text</li></a>
+  <a href="css_fonts" class="w3-hover-black"><li>CSS Fonts</li></a>
+  <a href="css_links" class="w3-hover-black"><li>CSS Links</li></a>
+  <a href="css_lists" class="w3-hover-black"><li>CSS Lists</li></a>
+  <a href="css_tables" class="w3-hover-black"><li>CSS Tables</li></a>
+  <a href="css_outline" class="w3-hover-black"><li>CSS Outline</li></a>
+  <a href="css_image_gallery" class="w3-hover-black"><li>CSS Image Gallery</li></a>
+  <a href="css_tooltip" class="w3-hover-black"><li>CSS Tooltip</li></a>
+  <a href="css_align" class="w3-hover-black"><li>CSS Align</li></a>
+  <a href="css_pseudo_class" class="w3-hover-black"><li>CSS Pseudo-class</li></a>
+  <a href="css_dropdowns" class="w3-hover-black"><li>CSS Dropdowns</li></a>
+  {{!-- <h4><b style="color:blue;letter-spacing:1px">Learn CSS3</b></h4>
+  <a href="css3_introduction" class="w3-hover-black"><li>CSS3 Introduction</li></a>
+  <a href="css3_animation" class="w3-hover-black"><li>CSS3 Animation</li></a>
+  <a href="css3_backgrounds.html" class="w3-hover-black"><li>CSS3 Backgrounds</li></a>
+  <a href="css3_border_images.html" class="w3-hover-black"><li>CSS3 Border Images</li></a>
+  <a href="css3_buttons.html" class="w3-hover-black"><li>CSS3 Buttons</li></a>
+  <a href="css3_colors.html" class="w3-hover-black"><li>CSS3 Colors</li></a>
+  <a href="css3_shadows.html" class="w3-hover-black"><li>CSS3 Shadows</li></a>
+  <a href="css3_pagination.html" class="w3-hover-black"><li>CSS3 Pagination</li></a>
+  <a href="css3_transition.html" class="w3-hover-black"><li>CSS3 Transition</li></a>
+  <a href="css3_media.html" class="w3-hover-black"><li>CSS3 Media</li></a>
+  <a href="css3_borders.html" class="w3-hover-black"><li>CSS3 Borders</li></a>
+  <a href="css3_images.html" class="w3-hover-black"><li>CSS3 Images</li></a>
+  <a href="css3_user_interface.html" class="w3-hover-black"><li>CSS3 User Interface</li></a>
+  <a href="css3_2dtransforms.html" class="w3-hover-black"><li>CSS3 2D Transforms</li></a>
+  <a href="css3_3dtransforms.html" class="w3-hover-black"><li>CSS3 3D Transforms</li></a> --}}
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+
+<div class="w3-main" style="margin-left:250px;margin-top:-50px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>CSS Height and Width</h1>
+	         <p style="margin-top:-10px">The CSS dimension properties allow you to control the height and width of an element.</p>
+			 <p>This element has a width of 100%.</p>
+			  <h2>Setting height and width</h2>
+	         <p style="margin-top:-10px">The <mark>height</mark> and <mark>width</mark> properties are used to set the height and width of an element.</p>
+	         <p>The <mark>height</mark> and <mark>width</mark> can be set to auto (this is default. Means that the browser calculates the height and width), or 
+			  be specified in length values, like px, cm, etc., or in percent (%) of the containing block.</p>
+		   
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown">div</span> { <br>
+&nbsp;&nbsp;&nbsp;<span style="color:red">width</span>: <span style="color:blue">350px</span>;<br>
+&nbsp;&nbsp;&nbsp;<span style="color:red">height</span>: <span style="color:blue">100px</span>;<br>
+&nbsp;&nbsp;&nbsp;<span style="color:red">border</span>: <span style="color:blue">5px solid green</span>;<br>
+}
+</div>
+{{!-- <a target="_blank" class="w3-jo w3-margin-bottom" href="tryit/thirtyfour.html">Run the file &raquo;</a> --}}
+</div><hr>
+</div>
+</div>
+</div><br>
+<div class="w3-main" style="margin-left:250px;margin-top:-120px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h2>Setting max-width</h2>
+	         <p style="margin-top:-10px">The <mark>max-width</mark>  property is used to set the maximum width of an element.
+			  The <mark>max-width</mark> can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).</p>
+			 <p>The problem with the <mark>&lt;div&gt;</mark> above occurs when the browser window is smaller than the width of the element (500px).
+			  The browser then adds a horizontal scrollbar to the page.</p>
+			  <p>Using <mark>max-width</mark> instead, in this situation, will improve the browser's handling of small windows.
+			   The value of the <mark>max-width</mark> property overrides <mark>width</mark>.</p>
+		</div>
+    </div>
+</div>
+
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown">div</span> { <br>
+&nbsp;&nbsp;&nbsp;<span style="color:red">max-width</span>: <span style="color:blue">350px</span>;<br>
+&nbsp;&nbsp;&nbsp;<span style="color:red">height</span>: <span style="color:blue">100px</span>;<br>
+&nbsp;&nbsp;&nbsp;<span style="color:red">border</span>: <span style="color:blue">5px solid green</span>;<br>
+}
+</div>
+{{!-- <a target="_blank" class="w3-jo w3-margin-bottom" href="tryit/thirtyfive.html">Run the file &raquo;</a> --}}
+</div><hr>
+<div class="nav">
+<div class="prev"><a class="chapter" href="css_padding">&laquo; Previous Page</a></div>
+<div class="next"><a class="chapter" href="css_text">Next Page&raquo;</a></div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<!--end coding box-->
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+</html>

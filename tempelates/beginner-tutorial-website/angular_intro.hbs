@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<title>Introduction of AngularJS</title>
+<meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description"
+    content="AngularJS Tutorial for beginners - Learn AngularJS in simple and easy steps starting from Overview, Environment Setup, MVC Architecture, First Application, Directives, Expressions, Controllers, Filters, Tables, HTML DOM, Modules, Forms, Includes, Ajax, Views, Scopes, Services, Dependency Injection, Custom Directives, Internalization, ToDo Application, Notepad Application, Bootstrap Application, Login Application, Upload File, In-line Application, Nav Menu, Switch Menu, Order Form, Search Tab." />
+<meta name="keywords"
+    content="AngularJS, Tutorial, Overview, MVC Architecture, First Application, Directives, Expressions, Controllers, Filters, Tables, HTML DOM, Modules, Forms, Includes, Ajax, Views, Scopes, Services, Dependency Injection, Custom Directives, Internalization, ToDo Application, Notepad Application, Bootstrap Application, Login Application, Upload File, In-line Application, Nav Menu, Switch Menu, Order Form, Search Tab." />
+<link rel="SHORTCUT ICON" href="../img/logo.png" />
+<link rel="stylesheet" href="/first.css">
+<link rel="stylesheet" href="/second.css">
+<link rel="stylesheet" href="/w3.css">
+<link rel="stylesheet" href="/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="/third.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "arial", sans-serif
+    }
+
+    .w3-sidenav a,
+    .w3-sidenav h4 {
+        padding: 12px;
+    }
+
+    .w3-navbar a {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+
+    .w3-btn {
+        border-radius: 3px;
+        float: left;
+        width: 185px;
+        height: 55px;
+        margin-left: 65px;
+        margin-top: 41px;
+        letter-spacing: 3px
+    }
+
+    .vetri {
+        margin-left: 200px;
+        margin-top: -98.4%
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+        <li class="w3-opennav w3-right w3-hide-large">
+            <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i
+                    class="fa fa-bars"></i></a>
+        </li>
+        <li><a href="/index" class="w3-theme-l1">Home</a></li>
+        <li class="w3-hide-small"><a href="/index#web_technology" class="w3-hover-white">Web Technology</a></li>
+        <li class="w3-hide-small"><a href="/index#projects" class="w3-hover-white">Projects</a></li>
+        <li class="w3-hide-small"><a href="/index#technology_updates" class="w3-hover-white">Technology
+                Updates</a></li>
+        <li class="w3-hide-medium w3-hide-small"><a href="/index#about_us" class="w3-hover-white">About us</a>
+        </li>
+    </ul>
+
+    <!-- Sidenav -->
+    <nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+        <h4><b style="color:blue;letter-spacing:1px">Learn AngularJS</b></h4>
+        <a href="/angular" class="w3-hover-black">
+            <li>AngularJS Overview</li>
+        </a>
+        <a href="/angular_intro#" class="w3-hover-black">
+            <li>AngularJS Introduction</li>
+        </a>
+        <a href="/angular_directives" class="w3-hover-black">
+            <li>AngularJS Directives</li>
+        </a>
+        <a href="angularjs_modules.html" class="w3-hover-black">
+            <li>AngularJS Modules</li>
+        </a>
+        <a href="angularjs_expressions.html" class="w3-hover-black">
+            <li>AngularJS Expressions</li>
+        </a>
+        <a href="angularjs_scopes.html" class="w3-hover-black">
+            <li>AngularJS Scopes</li>
+        </a>
+        <a href="angularjs_forms.html" class="w3-hover-black">
+            <li>AngularJS Forms</li>
+        </a>
+        <a href="angularjs_tables.html" class="w3-hover-black">
+            <li>AngularJS Tables</li>
+        </a>
+        <a href="angularjs_filters.html" class="w3-hover-black">
+            <li>AngularJS Filters</li>
+        </a>
+        <a href="angularjs_validation.html" class="w3-hover-black">
+            <li>AngularJS Validation</li>
+        </a>
+        <a href="angularjs_services.html" class="w3-hover-black">
+            <li>AngularJS Services</li>
+        </a>
+    </nav>
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+
+    <!--end sidenav-->
+
+
+
+    <div class="w3-main"
+        style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container"><br /><br />
+                <p>
+                <h1>Introduction of AngularJS</h1>
+                </p>
+                <p style="margin-top:-10px;text-indent:50px">AngularJS is a JavaScript framework. It can be added to an
+                    HTML page with a &lt;script&gt; tag.
+                    It is a library file written in JavaScript. AngularJS extends HTML attributes with Directives, and
+                    binds data to HTML with Expressions.AngularJS is a structural framework for dynamic web apps.</p>
+                <p>
+                <h2>AngularJS Components</h2>
+                </p>
+                <p>AngularJS framework extends With 3 HTML Directives</p>
+                <p>&nbsp;&nbsp;The <i><b>ng-app</b></i> directive defines the AngularJS application.</p>
+                <p>&nbsp;&nbsp;The <i><b>ng-model</b></i> directive binds the value of HTML controls</p>
+                <p>&nbsp;&nbsp;The <i><b>ng-bind</b></i> directive binds application data to the HTML view and tags</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top:-60px">
+        <div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+            &nbsp;</div>
+        <div class='w3-rest'>
+            <div class='w3-col l10 m12' id='main'>
+                <div class="w3-example" style="margin-top:-10px">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang="en-US"&gt;<br>
+                        &lt;script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"&gt;
+                        &lt;/script&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;div ng-app=""&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Your Name: &lt;input type="text"
+                        ng-model="name"&gt; &lt;/p&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p ng-bind="name" &gt; &lt/p&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </div>
+                    <a target="_blank" class="w3-jo w3-margin-bottom" href="two1">Run the file &raquo;</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="w3-main"
+        style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <p>
+                <h2>AngularJS Directives</h2>
+                </p>
+                <p style="margin-top:-10px;text-indent:50px">Directives are markers on a DOM element (such as an
+                    attribute, element name, comment or CSS class) that tell AngularJS's HTML compile
+                    to attach a specified behavior to that DOM element (e.g. via event listeners), or even to transform
+                    the DOM element and its children.</p>
+                <p>
+                <h2>Creating a Directive that Adds Event Listeners</h2>
+                </p>
+                <p style="margin-top:-10px">we used the function to create a directive that manipulated its DOM
+                    elements.</p>
+                <p>Building upon that example, let's make a directive that reacts to events on its elements.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top:-60px">
+        <div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+            &nbsp;</div>
+        <div class='w3-rest'>
+            <div class='w3-col l10 m12' id='main'>
+                <div class="w3-example" style="margin-top:-10px">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang="en-US"&gt;<br>
+                        &lt;script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"&gt;
+                        &lt;/script&gt;<br>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function mouseup() { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$document.off ('mousemove',
+                        mousemove);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$document.off ('mouseup', mouseup);
+                        }<br>
+                        &lt;/script&gt;<br>
+                        &lt;body ng-app ="dragModule" &gt;<br>
+                        &lt;span my-draggable&gt; Drag Me &lt;/span&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </div>
+                    <a target="_blank" class="w3-jo w3-margin-bottom" href="three1">Run the file &raquo;</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="w3-main"
+        style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <p>
+                <h2>AngularJS Application</h2>
+                </p>
+                <p style="margin-top:-10px">1.&nbsp;&nbsp;AngularJS <b>modules</b> define the AngularJS applications.
+                </p>
+                <p>2.&nbsp;&nbsp;AngularJS <b>controllers</b> control the AngularJS applications.</p>
+                <p>3.&nbsp;&nbsp;AngularJS <b>ng-app</b> directive defines the application, the <b>ng-controller</b>
+                    directive defines the controller.</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-main"
+        style="margin-left:250px;margin-top:-130px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <p>
+                <h2>AngularJS Expression</h2>
+                </p>
+                <p style="margin-top:-10px;text-indent:50px">Angular expressions are JavaScript-like code snippets that
+                    are mainly placed in interpolation binding. AngularJS expressions are written inside double braces:
+                    <b>{{ expression }}</b>.
+                    Expressions are used to bind the application in data to html. AngularJS application expressions are
+                    pure javascript expressions and outputs the data where they are used.</p>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:-60px">
+        <div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+            &nbsp;</div>
+        <div class='w3-rest'>
+            <div class='w3-col l10 m12' id='main'>
+                <div class="w3-example" style="margin-top:-10px">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html lang="en-US"&gt;<br>
+                        &lt;script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"&gt;
+                        &lt;/script&gt;<br>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it('should calculate expression in
+                        binding', function() { <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;expect(element(by.binding('1+2')).getText()).toEqual('1+2=3');<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br>
+                        &lt;/script&gt;<br>
+                        &lt;body ng-app = " " &gt;<br>
+                        &lt;span&gt;<br>
+                        {{!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1+2={{1+2}} <br> --}}
+                        &lt;/span&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </div>
+                    <a target="_blank" class="w3-jo w3-margin-bottom" href="four1">Run the file &raquo;</a>
+                </div>
+                <hr>
+                <div class="nav">
+                    <div class="prev"><a class="chapter" href="angular">&laquo; Previous Page</a></div>
+                    <div class="next"><a class="chapter" href="angular_directives">Next Page&raquo;</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--end coding box-->
+    <script>
+        // Script to open and close the sidenav
+        function w3_open() {
+            document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+            document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+            document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title>Beginner Tutorial Project | VetBosSel</title>
+<meta name="viewport"
+  content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="Keywords"
+  content="HTML,CSS,JavaScript,DOM,jQuery,PHP,SQL,XML,Bootstrap,Web,W3C,tutorials,programming,development,training,learning,quiz,primer,lessons,reference,examples,source code,colors,demos,tips,w3c">
+<link rel="SHORTCUT ICON" href="img/logo.png" />
+<link rel="stylesheet" href="/first.css">
+<link rel="stylesheet" href="/second.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="/third.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "arial", sans-serif
+  }
+
+  .w3-sidenav a,
+  .w3-sidenav h4 {
+    padding: 12px;
+  }
+
+  .w3-navbar a {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .w3-btn {
+    border-radius: 3px;
+    float: left;
+    width: 185px;
+    height: 55px;
+    margin-left: 65px;
+    margin-top: 41px;
+    letter-spacing: 3px
+  }
+
+  .vetri {
+    margin-left: 200px;
+    margin-top: -98.4%
+  }
+</style>
+
+<body>
+
+  <!-- Navbar -->
+  <ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+    <li class="w3-opennav w3-right w3-hide-large">
+      <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i
+          class="fa fa-bars"></i></a>
+    </li>
+    <li><a href="index#" class="w3-theme-l1">Home</a></li>
+    <li class="w3-hide-small"><a href="#web_technology" class="w3-hover-white">Web Technology</a></li>
+    {{!-- <li class="w3-hide-small"><a href="#projects" class="w3-hover-white">Projects</a></li> --}}
+    <li class="w3-hide-small"><a href="#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+    <li class="w3-hide-medium w3-hide-small"><a href="#about_us" class="w3-hover-white">About Us</a></li>
+    <li class="w3-hide-medium w3-hide-small"><a href="/logout" class="w3-hover-white">Logout</a></li>
+  </ul>
+
+  <!-- Sidenav -->
+  <nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+    <h4><b>Menu</b></h4>
+    <a href="#web_technology" class="w3-hover-black">Web Technology</a>
+    {{!-- <a href="#projects" class="w3-hover-black">Projects</a> --}}
+    <a href="#technology_updates" class="w3-hover-black">Technology Updates</a>
+    <a href="#about_us" class="w3-hover-black">About Us</a>
+  </nav>
+
+  <!-- Overlay effect when opening sidenav on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidenav is visible -->
+  <div class="w3-main" style="margin-left:250px;">
+    <div class="w3-row w3-padding-64" id="web_technology">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Web Technology</h1>
+        <p><a href="/angular"><button class="w3-btn w3-hover-red">AngularJS</button></a></p>
+        <p><a href="bootstrap"><button class="w3-btn w3-hover-red">Bootstrap</button></a></p>
+        <p><a href="css"><button class="w3-btn w3-hover-red">CSS</button></a></p>
+        <p><a href="code"><button class="w3-btn w3-hover-red">Codeigniter</button></a></p>
+        {{!-- <p><a href="drupal"><button class="w3-btn w3-hover-red">Drupal</button></a></p> --}}
+        {{!-- <p><a href="html/index"><button class="w3-btn w3-hover-red">HTML</button></a></p> --}}
+        <p><a href="html5"><button class="w3-btn w3-hover-red">HTML5</button></a></p>
+        {{!-- <p><a href="javascript/index"><button class="w3-btn w3-hover-red">JavaScript</button></a></p> --}}
+        {{!-- <p><a href="jquery/index"><button class="w3-btn w3-hover-red">jQuery</button></a></p> --}}
+        {{!-- <p><a href="json/index.html"><button class="w3-btn w3-hover-red">JSON</button></a></p> --}}
+        {{!-- <p><a href="laravel"><button class="w3-btn w3-hover-red">Laravel</button></a></p> --}}
+        {{!-- <p><a href="/magneto"><button class="w3-btn w3-hover-red">Magento</button></a></p> --}}
+        <p><a href="node"><button class="w3-btn w3-hover-red">Node.js</button></a></p>
+        {{!-- <p><button class="w3-btn w3-hover-red">Purple</button></p> --}}
+        <p><a href="php"><button class="w3-btn w3-hover-red">PHP</button></a></p>
+        {{!-- <p><a href="php/index.html"><button class="w3-btn w3-hover-red">Wordpress</button></a></p> --}}
+      </div>
+    </div>
+
+    {{!-- <div class="w3-row" id="projects">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Projects</h1>
+        <p><button class="w3-btn w3-bttn w3-hover-blue">PHP</button></p>
+        <p><button class="w3-btn w3-bttn w3-hover-blue">Java</button></p>
+        <p><button class="w3-btn w3-bttn w3-hover-blue">.Net</button></p>
+        <p><button class="w3-btn w3-bttn w3-hover-blue">Android</button></p>
+      </div>
+    </div> --}}
+
+    <div class="w3-row w3-padding-64" id="technology_updates">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Technology Updates</h1>
+        <p><a href="g1"><button
+              class="w3-btn w3-btttn w3-hover-orange">Google</button><a></p>
+        <p><a href="android"><button
+              class="w3-btn w3-btttn w3-hover-orange">Android</button></a></p>
+        <p><a href="apple"><button
+              class="w3-btn w3-btttn w3-hover-orange">Apple</button></a></p>
+        <p><a href="https://www.windowslatest.com"><button class="w3-btn w3-btttn w3-hover-orange">Windows</button></a></p>
+        <p><a href="linux"><button
+              class="w3-btn w3-btttn w3-hover-orange">Linux</button></a></p>
+        <p><a href="Oracle"><button
+              class="w3-btn w3-btttn w3-hover-orange">Oracle</button></a></p>
+        <p><a href="Micr"><button
+              class="w3-btn w3-btttn w3-hover-orange">Microsoft</button></a></p>
+        {{!-- <p><button class="w3-btn w3-btttn w3-hover-orange">Art.Intelligence</button></p> --}}
+      </div>
+    </div>
+
+    <div class="w3-row w3-padding-64" id="about_us">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">About Us</h1>
+        <div class="w3-tag w3-udangudi w3-red">C</div>
+        <div class="w3-tag w3-udangudi">O</div>
+        <div class="w3-tag w3-udangudi w3-yellow">D</div>
+        <div class="w3-tag w3-udangudi">E</div><br>
+        <div class="w3-tag w3-udangudi w3-yellow">S</div>
+        <div class="w3-tag w3-udangudi w3-red">T</div>
+        <div class="w3-tag w3-udangudi w3-yellow">A</div>
+        <div class="w3-tag w3-udangudi w3-yellow">C</div>
+        <div class="w3-tag w3-udangudi w3-yellow">K</div>
+      </div>
+    </div>
+    {{!-- <h5 style="margin-top:-26px;color:green">Did you know more about me just view the video..</h5> --}}
+    {{!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Jw7I4tDsFfw" frameborder="0" --}}
+      {{!-- allowfullscreen></iframe> --}}
+    <h3>Follow me</h3>
+    <a href="https://www.youtube.com/channel/UC-8UOZ6WQSQJqW5xSwwx2dA" target="_blank" align="right">
+      <i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/gurpreet-moudgill-76707a1b9/" target="_blank" align="right">
+      <i class="fa fa-linkedin" style="font-size:48px;"></i></a>&nbsp;&nbsp;
+    <a href="https://www.instagram.com/gurpreetmoudgill/" target="_blank" align="right">
+      <i class="fa fa-instagram" style="font-size:48px;"></i></a>&nbsp;&nbsp;
+    <a href="https://github.com/Gurpreet-Moudgill" target="_blank" align="right">
+      <i class="fa fa-github" style="font-size:48px;"></i></a>
+  </div>
+
+  <script>
+    // Script to open and close the sidenav
+    function w3_open() {
+      document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+      document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+      document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+    }
+  </script>
+
+  <!--phonegap property-->
+  <script type="text/javascript" src="https://vetbossel.in/beginner-tutorial-website/cordova.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    app.initialize();
+  </script>
+  <!--phongap property-->
+
+
+
+</body>
+
+</html>

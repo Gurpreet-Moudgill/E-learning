@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<title>CSS Introduction</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="CSS Tutorial - CSS Tutorials for beginners to advanced developers Learning Cascading Style Sheet in simple and easy steps with examples. A complete reference manual for CSS2 & CSS3 properties." />
+<meta name="keywords" content="CSS, Tutorials, Learning, Beginners, CSS, Basics, Advanced, Cascading Style Sheet, CSS2, CSS3, Properties, HTMl, XHTML, Reference, Manual." />
+<link rel="SHORTCUT ICON" href="/logo.png" />
+<link rel="stylesheet" href="/first.css">
+<link rel="stylesheet" href="/second.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="index" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="index#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="index#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="index#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="index#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn CSS</b></h4>
+  <a href="css" class="w3-hover-black"><li>CSS Overview</li></a>
+  <a href="css_introduction#" class="w3-hover-black"><li>CSS Introduction</li></a>
+  <a href="css_syntax" class="w3-hover-black"><li>CSS Syntax</li></a>
+  <a href="css_ways" class="w3-hover-black"><li>CSS Ways</li></a>
+  <a href="css_backgrounds" class="w3-hover-black"><li>CSS Backgrounds</li></a>
+  <a href="css_borders" class="w3-hover-black"><li>CSS Borders</li></a>
+  <a href="css_box_model" class="w3-hover-black"><li>CSS Box Model</li></a>
+  <a href="css_display" class="w3-hover-black"><li>CSS Display</li></a>
+  <a href="css_float" class="w3-hover-black"><li>CSS Float</li></a>
+  <a href="css_forms" class="w3-hover-black"><li>CSS Forms</li></a>
+  <a href="css_margins" class="w3-hover-black"><li>CSS Margins</li></a>
+  <a href="css_padding" class="w3-hover-black"><li>CSS Padding</li></a>
+  <a href="css_height_width" class="w3-hover-black"><li>CSS Height/Width</li></a>
+  <a href="css_text" class="w3-hover-black"><li>CSS Text</li></a>
+  <a href="css_fonts" class="w3-hover-black"><li>CSS Fonts</li></a>
+  <a href="css_links" class="w3-hover-black"><li>CSS Links</li></a>
+  <a href="css_lists" class="w3-hover-black"><li>CSS Lists</li></a>
+  <a href="css_tables" class="w3-hover-black"><li>CSS Tables</li></a>
+  <a href="css_outline" class="w3-hover-black"><li>CSS Outline</li></a>
+  <a href="css_image_gallery" class="w3-hover-black"><li>CSS Image Gallery</li></a>
+  <a href="css_tooltip" class="w3-hover-black"><li>CSS Tooltip</li></a>
+  <a href="css_align" class="w3-hover-black"><li>CSS Align</li></a>
+  <a href="css_pseudo_class" class="w3-hover-black"><li>CSS Pseudo-class</li></a>
+  <a href="css_dropdowns" class="w3-hover-black"><li>CSS Dropdowns</li></a>
+  {{!-- <h4><b style="color:blue;letter-spacing:1px">Learn CSS3</b></h4>
+  <a href="css3_introduction" class="w3-hover-black"><li>CSS3 Introduction</li></a>
+  <a href="css3_animation" class="w3-hover-black"><li>CSS3 Animation</li></a>
+  <a href="css3_backgrounds" class="w3-hover-black"><li>CSS3 Backgrounds</li></a>
+  <a href="css3_border_images.html" class="w3-hover-black"><li>CSS3 Border Images</li></a>
+  <a href="css3_buttons.html" class="w3-hover-black"><li>CSS3 Buttons</li></a>
+  <a href="css3_colors.html" class="w3-hover-black"><li>CSS3 Colors</li></a>
+  <a href="css3_shadows.html" class="w3-hover-black"><li>CSS3 Shadows</li></a>
+  <a href="css3_pagination.html" class="w3-hover-black"><li>CSS3 Pagination</li></a>
+  <a href="css3_transition.html" class="w3-hover-black"><li>CSS3 Transition</li></a>
+  <a href="css3_media.html" class="w3-hover-black"><li>CSS3 Media</li></a>
+  <a href="css3_borders.html" class="w3-hover-black"><li>CSS3 Borders</li></a>
+  <a href="css3_images.html" class="w3-hover-black"><li>CSS3 Images</li></a>
+  <a href="css3_user_interface.html" class="w3-hover-black"><li>CSS3 User Interface</li></a>
+  <a href="css3_2dtransforms.html" class="w3-hover-black"><li>CSS3 2D Transforms</li></a>
+  <a href="css3_3dtransforms.html" class="w3-hover-black"><li>CSS3 3D Transforms</li></a> --}}
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+<!--end sidenav-->
+
+<div class="w3-main" style="margin-left:250px;margin-top:-60px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <p><h1>CSS Introduction</h1></p>
+	        <p style="margin-top:-10px;text-indent:50px"><b>CSS</b> stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets. CSS handles the look and feel part of a web page. CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+			    CSS saves a lot of work. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files.</p> 
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>S</b>tyle <b>S</b>heets allow content to be optimized for more than one type of device. By using the same <b>HTML</b> document, different versions of a website can be presented for handheld devices such as PDAs 
+			   and cell phones or for printing. Now HTML attributes are being <i>deprecated</i> and it is being <b>recommended</b> to use <b>CSS</b>. So its a good idea to start using CSS in all the HTML pages to make them compatible to future browsers.</p>
+		 <p><h2>Versions of CSS</h2></p>
+		 <p style="margin-top:-10px"><b>1.</b> Cascading Style Sheets, level 1 (CSS1) was came out of W3C as a recommendation in December 1996. This version describes the CSS language as well as a simple visual formatting model for all the HTML tags.</p> 
+		 <P><b>2.</b> CSS2 was became a W3C recommendation in May 1998 and builds on CSS1. This version adds support for media-specific style sheets e.g. printers and aural devices, downloadable fonts, element positioning and tables.</p> 
+		 <P><b>3.</b> CSS3 was became a W3C recommendation in June 1999 and builds on older versions CSS. It has divided into documentations is called as Modules and here each module having new extension features defined in CSS2.</p> 
+		 <p><h2>Why use CSS</h2></p>
+		 <p style="text-indent:50px">First of all, you are separating the content of the web page which is text and images into the HTML file and the visual presentation such as the layout, style, color etc. into a CSS file. This minimizes the amount of code in the actual webpage so the loadtime is shorter.</p>
+		 <p style="text-indent:50px">A stylesheet is usually stored in the browser cache, and can therefore be used on multiple pages without being reloaded, increasing download speeds and reducing data transfer over a network.</p>
+		 <p style="text-indent:50px">CSS offers freedom in designing that HTML tables never might. While tables are rigid, inflexible, and grid based, CSS-based designs are fluid, flexible and expandable.</p>
+		 <p style="text-indent:50px">Since the content is separated from the layout styles, redesigning is a snap with CSS. All you have to update is the CSS file and the changes will be carried across the entire structure.</p>
+		</div>
+    </div>
+</div>
+
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+</html>

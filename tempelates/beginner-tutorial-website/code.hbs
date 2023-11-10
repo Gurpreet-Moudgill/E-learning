@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>Codeigniter Tutorial</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="CodeIgniter Tutorial - Learn CodeIgniter starting from Overview, Installing CodeIgniter, MVC Framework, Basic Concepts, Configuration, Working with Database, Libraries, Error Handling, File Uploading, Sending Email, Form Validation, Session Management, Flashdata, Tempdata, Cookie Management, Common Functions, Page Caching, Page Redirection, Application Profiling, Benchmarking, Adding JS and CSS, Internationalization, Security." /> 
+<meta name="keywords" content="CodeIgniter, Tutorial, Overview, Installing CodeIgniter, Application Architecture, MVC Framework, Basic Concepts, Configuration, Working with Database, Libraries, Error Handling, File Uploading, Sending Email, Form Validation, Session Management, Flashdata, Tempdata, Cookie Management, Common Functions, Page Caching, Page Redirection, Application Profiling, Benchmarking, Adding JS and CSS, Internationalization, Security." />
+<link rel="SHORTCUT ICON" href="logo.png" />
+<link rel="stylesheet" href="/first.css">
+<link rel="stylesheet" href="/second.css">
+<link rel="stylesheet" href="/w3.css">
+<link rel="stylesheet" href="/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="index" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="index#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="index#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="index#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="index#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn CodeIgniter</b></h4>
+  <a href="code#" class="w3-hover-black"><li>CodeIgniter Overview</li></a>
+  <a href="codeigniter_introduction" class="w3-hover-black"><li>CodeIgniter Introduction</li></a>
+  <a href="codeigniter_mvc" class="w3-hover-black"><li>CodeIgniter MVC</li></a>
+  <a href="codeigniter_basics" class="w3-hover-black"><li>CodeIgniter Basics</li></a>
+  <a href="codeigniter_configuration" class="w3-hover-black"><li>CodeIgniter Configuration</li></a>
+  <a href="codeigniter_database" class="w3-hover-black"><li>CodeIgniter Connect DB</li></a>
+  <a href="codeigniter_libraries" class="w3-hover-black"><li>CodeIgniter Libraries</li></a>
+  <a href="codeigniter_file_uploading" class="w3-hover-black"><li>CodeIgniter File Uploading</li></a>
+  <a href="codeigniter_form_validation" class="w3-hover-black"><li>CodeIgniter Form validation</li></a>
+  <a href="codeigniter_session" class="w3-hover-black"><li>CodeIgniter Session</li></a>
+  <a href="codeigniter_cookie" class="w3-hover-black"><li>CodeIgniter Cookie</li></a>
+  <a href="codeigniter_security" class="w3-hover-black"><li>CodeIgniter Security</li></a>
+  
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+<div><img src="code.png" style="margin-left:220px;margin-top:10px;"/></div>
+<!--end sidenav-->
+
+<div class="w3-main" style="margin-left:450px;margin-top:-265px;font-family:'Segoe UI',Arial,sans-serif;font-size:18px;letter-spacing:0.2px">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <p>CodeIgniter is a powerful PHP Framework</p>
+	  <P>CodeIgniter Open Source Framework</p>
+	  <p>CodeIgniter Model-View-Controller Based System</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>Overview of CodeIgniter</h1>
+	        <p style="text-indent:50px;margin-top:-10px">CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple 
+			and elegant toolkit to create full-featured web applications.</p>
+			<p>MVC stands for Model View Controller. The model view controller pattern is the most used pattern for today’s world web applications.
+			At present, there is more than a dozen PHP framework based on MVC pattern.</p>
+			<p>The MVC pattern separates an application in 3 modules: Model, View, Controller.
+			The Model is responsible for managing the data. The View is responsible for displaying the data provided by the model in a specific format.</p>
+			<p>CodeIgniter is one of the most popular PHP frameworks and it follows the MVC pattern. Web Developer can be able to build full-featured web applications with CodeIgniter.</p>
+            <p>Before you start proceeding with this tutorial, we assume that you are already exposed to HTML, Core PHP, and Advance PHP. 
+			We have used CodeIgniter version 3.0.1 in all the examples.</p>
+			<h2>How get CodeIgniter?</h2>
+			<p style="margin-top:-10px">1.&nbsp;Download CodeIgniter from <a style="color:blue;text-decorationLnone" href="https://www.codeigniter.com/download">https://www.codeigniter.com/download</a></p>
+		  <div><img src="igniter.png" style="margin-left:160px;margin-top:30px;"/></div>
+		  <p>2.&nbsp;Extract the zip file.</p>
+		  <p>3.&nbsp;Move the folder at the localhost. <i>(c:/xampp/htdocs/codeigniter)</i></p>
+		  <p>4.&nbsp;Then, open the browser type <i>(localhost/codeigniter)</i></p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class="nav">
+<div class="next"><a class="chapter" href="codeigniter_introduction">Next Page&raquo;</a></div>
+</div><hr>
+</div>
+<!--strat inspirational-->
+<div class="w3-container" style="margin-left:250px">
+  <h2 style="letter-spacing:2px">Inspirational Quotes</h2>
+  <p style="letter-spacing:2px"><marquee>This specially created for students to grow the <b>self confidence</b> for learning.</marquee></p>
+</div>
+
+<ul class="w3-ul w3-card-4" style="margin-left:250px">
+  <li class="w3-padding-16">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+    <img src="swami-vivekananda.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-xlarge" style="letter-spacing:1px">Swami Vivekananda</span><br><br/>
+    <span style="font-size:18px;letter-spacing:1.5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Be a Hero. Always say, 'i have no fear'.</i></span>
+  </li>
+</ul><br/><br/><br/>
+
+<ul class="w3-ul w3-card-4" style="margin-left:250px">
+  <li class="w3-padding-16">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+    <img src="abdul.jpg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-xlarge" style="letter-spacing:1px">A.P.J Abdul Kalam</span><br><br/>
+    <span style="font-size:18px;letter-spacing:1.5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Suffering is the essence of SUCCESS.</i></span>
+  </li>
+</ul><br/><br/><br/>
+
+<ul class="w3-ul w3-card-4" style="margin-left:250px">
+  <li class="w3-padding-16">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+    <img src="albert.jpg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-xlarge" style="letter-spacing:1px">Albert Einstein</span><br><br/>
+    <span style="font-size:18px;letter-spacing:1.5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>You never fail until you stop trying.</i></span>
+  </li>
+</ul><br/><br/><br/>
+
+<ul class="w3-ul w3-card-4" style="margin-left:250px">
+  <li class="w3-padding-16">
+    <span onclick="this.parentElement.style.display='none'" 
+    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+    <img src="steve-jobs.jpg" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-xlarge" style="letter-spacing:1px">Steve Jobs</span><br><br/>
+    <span style="font-size:18px;letter-spacing:1.5px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>The people who are CRAZY enough to think they can change the world are the ones who do.</i></span>
+  </li>
+</ul><br><br>
+<!--end inspirational-->
+<!--end coding box-->
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+</html>

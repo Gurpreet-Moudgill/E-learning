@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>Codeigniter Configuration</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="CodeIgniter Tutorial - Learn CodeIgniter starting from Overview, Installing CodeIgniter, MVC Framework, Basic Concepts, Configuration, Working with Database, Libraries, Error Handling, File Uploading, Sending Email, Form Validation, Session Management, Flashdata, Tempdata, Cookie Management, Common Functions, Page Caching, Page Redirection, Application Profiling, Benchmarking, Adding JS and CSS, Internationalization, Security." /> 
+<meta name="keywords" content="CodeIgniter, Tutorial, Overview, Installing CodeIgniter, Application Architecture, MVC Framework, Basic Concepts, Configuration, Working with Database, Libraries, Error Handling, File Uploading, Sending Email, Form Validation, Session Management, Flashdata, Tempdata, Cookie Management, Common Functions, Page Caching, Page Redirection, Application Profiling, Benchmarking, Adding JS and CSS, Internationalization, Security." />
+<link rel="SHORTCUT ICON" href="logo.png" />
+<link rel="stylesheet" href="/first.css">
+<link rel="stylesheet" href="/second.css">
+<link rel="stylesheet" href="/w3.css">
+<link rel="stylesheet" href="/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="/third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="index" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="index#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="index#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="index#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="index#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn CodeIgniter</b></h4>
+  <a href="code" class="w3-hover-black"><li>CodeIgniter Overview</li></a>
+  <a href="codeigniter_introduction" class="w3-hover-black"><li>CodeIgniter Introduction</li></a>
+  <a href="codeigniter_mvc" class="w3-hover-black"><li>CodeIgniter MVC</li></a>
+  <a href="codeigniter_basics" class="w3-hover-black"><li>CodeIgniter Basics</li></a>
+  <a href="codeigniter_configuration#" class="w3-hover-black"><li>CodeIgniter Configuration</li></a>
+  <a href="codeigniter_database" class="w3-hover-black"><li>CodeIgniter Connect DB</li></a>
+  <a href="codeigniter_libraries" class="w3-hover-black"><li>CodeIgniter Libraries</li></a>
+  <a href="codeigniter_file_uploading" class="w3-hover-black"><li>CodeIgniter File Uploading</li></a>
+  <a href="codeigniter_form_validation" class="w3-hover-black"><li>CodeIgniter Form validation</li></a>
+  <a href="codeigniter_session" class="w3-hover-black"><li>CodeIgniter Session</li></a>
+  <a href="codeigniter_cookie" class="w3-hover-black"><li>CodeIgniter Cookie</li></a>
+  <a href="codeigniter_security" class="w3-hover-black"><li>CodeIgniter Security</li></a>
+  
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+
+<div class="w3-main" style="margin-left:250px;margin-top:-50px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>CodeIgniter Configuration URL</h1>
+	        <p style="margin-top:-10px">The base URL of the site can be configured in application/config/config.php file. It is URL to your CodeIgniter root. Typically, this will be 
+			your base URL, with a trailing slash like <i>https://google.com</i></p>
+			<p>If this is not set, then CodeIgniter will try to guess the protocol, domain and path to your installation.
+			However, you should always configure this explicitly and never rely on autoguessing, especially in production environments. You can 
+			configure the base URL in the $config array with key base_url as shown below:</p>
+			<p><i>$config['base_url'] = 'http://yourblog.com';</i></p>
+			<h2>Database Configuration</h2>
+			<p style="margin-top:-10px">The database of the site can be configured in application/database.php file. Often we need to set up database for different environment like development 
+			and production. With the multidimensional array provided in the CodeIgniter, we can setup database for different environment.
+			The configuration settings are stored in the array as shown below:</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+$db['default'] = array(<br>
+&nbsp;&nbsp;&nbsp;'dsn'   => '',<br>
+&nbsp;&nbsp;&nbsp;'hostname' => 'localhost',<br>
+&nbsp;&nbsp;&nbsp;'username' => 'root',<br>
+&nbsp;&nbsp;&nbsp;'password' => '',<br>
+&nbsp;&nbsp;&nbsp;'database' => 'database_name',<br>
+&nbsp;&nbsp;&nbsp;'dbdriver' => 'mysqli',<br>
+&nbsp;&nbsp;&nbsp;'dbprefix' => '',<br>
+&nbsp;&nbsp;&nbsp;'pconnect' => TRUE,<br>
+&nbsp;&nbsp;&nbsp;'db_debug' => TRUE,<br>
+&nbsp;&nbsp;&nbsp;'cache_on' => FALSE,<br>
+&nbsp;&nbsp;&nbsp;'cachedir' => '',<br>
+&nbsp;&nbsp;&nbsp;'char_set' => 'utf8',<br>
+&nbsp;&nbsp;&nbsp;'dbcollat' => 'utf8_general_ci',<br>
+&nbsp;&nbsp;&nbsp;'swap_pre' => '',<br>
+&nbsp;&nbsp;&nbsp;'encrypt' => FALSE,<br>
+&nbsp;&nbsp;&nbsp;'compress' => FALSE,<br>
+&nbsp;&nbsp;&nbsp;'stricton' => FALSE,<br>
+&nbsp;&nbsp;&nbsp;'failover' => array()<br>
+);
+</div>
+</div><hr>
+</div>
+</div>
+</div><br>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>Autoload Configuration</h2>
+			<p style="margin-top:-10px">This file specifies, by default, which systems should be loaded. In order to keep the framework as light-weight 
+			as possible, only the absolute minimal resources are loaded by default. One should autoload the frequently used system, rather than loading 
+			it at local level,repeatedly. Following are the things you can load automatically.</p>
+			<p><b>&nbsp;&nbsp;Libraries</b> - It is a list of libraries, which should be auto loaded. Provide a list of libraries in an array as shown below to be autoloaded
+			by CodeIgniter. In this example, we are auto loading database, email and session libraries.</p>
+			<p><mark>$autoload['libraries'] = array('database', 'email', 'session');</mark></p>
+			<p><b>&nbsp;&nbsp;Drivers</b> - These classes are located in system/libraries/ or in your application/libraries/ directory, but are also placed inside their own 
+			subdirectory and they extend the CI_Driver_Library class. They offer multiple interchangeable driver options. Following is an example to autoload cache drivers.</p>
+			<p><mark>$autoload['drivers'] = array('cache');</mark></p>
+			<p><b>&nbsp;&nbsp;Helper files</b> - It is a list of helper files, to be autoloaded. Provide a list of libraries in the array, as shown below, to be autoloaded by 
+			CodeIgniter. In the given example, we are autoloading URL and file helpers.</p>
+			<p><mark>$autoload['helper'] = array('url', 'file');</mark></p>
+			<p><b>&nbsp;&nbsp;Custom config files</b> - These files are intended for use, only if you have created custom config files. Otherwise, leave it blank. Following is 
+			an example of how to autoload more than one config files.</p>
+			<p><mark>$autoload['language'] = array('lang1', 'lang2');</mark></p>
+			<p><b>&nbsp;&nbsp;Language files</b> - It is a list of language files, which should be auto loaded. Look at the example given below. Provide a list of languages in 
+			an array as shown below to be auto loaded by CodeIgniter.</p>
+			<p><mark>$autoload['language'] = array('lang1', 'lang2');</mark></p>
+			<p><b>&nbsp;&nbsp;Models</b> - It is a list of models file, which should be autoloaded. Provide a list of models in an array as shown below to be autoloaded by 
+			CodeIgniter. Following is the example of how to auto load more than one models files.</p>
+			<p><mark>$autoload['model'] = array('first_model', 'second_model');</mark></p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class="nav">
+<div class="prev"><a class="chapter" href="codeigniter_basics">&laquo; Previous Page</a></div>
+<div class="next"><a class="chapter" href="codeigniter_database">Next Page&raquo;</a></div>
+</div><hr>
+</div>
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<title>AngularJs Forms</title>
+<meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description"
+    content="AngularJS Tutorial for beginners - Learn AngularJS in simple and easy steps starting from Overview, Environment Setup, MVC Architecture, First Application, Directives, Expressions, Controllers, Filters, Tables, HTML DOM, Modules, Forms, Includes, Ajax, Views, Scopes, Services, Dependency Injection, Custom Directives, Internalization, ToDo Application, Notepad Application, Bootstrap Application, Login Application, Upload File, In-line Application, Nav Menu, Switch Menu, Order Form, Search Tab." />
+<meta name="keywords"
+    content="AngularJS, Tutorial, Overview, MVC Architecture, First Application, Directives, Expressions, Controllers, Filters, Tables, HTML DOM, Modules, Forms, Includes, Ajax, Views, Scopes, Services, Dependency Injection, Custom Directives, Internalization, ToDo Application, Notepad Application, Bootstrap Application, Login Application, Upload File, In-line Application, Nav Menu, Switch Menu, Order Form, Search Tab." />
+<link rel="SHORTCUT ICON" href="../img/logo.png" />
+<link rel="stylesheet" href="/first.css">
+<link rel="stylesheet" href="/second.css">
+<link rel="stylesheet" href="/w3.css">
+<link rel="stylesheet" href="/w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="/third.css">
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "arial", sans-serif
+    }
+
+    .w3-sidenav a,
+    .w3-sidenav h4 {
+        padding: 12px;
+    }
+
+    .w3-navbar a {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+
+    .w3-btn {
+        border-radius: 3px;
+        float: left;
+        width: 185px;
+        height: 55px;
+        margin-left: 65px;
+        margin-top: 41px;
+        letter-spacing: 3px
+    }
+
+    .vetri {
+        margin-left: 200px;
+        margin-top: -98.4%
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+        <li class="w3-opennav w3-right w3-hide-large">
+            <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i
+                    class="fa fa-bars"></i></a>
+        </li>
+        <li><a href="index" class="w3-theme-l1">Home</a></li>
+        <li class="w3-hide-small"><a href="index#web_technology" class="w3-hover-white">Web Technology</a></li>
+        <li class="w3-hide-small"><a href="index#projects" class="w3-hover-white">Projects</a></li>
+        <li class="w3-hide-small"><a href="index#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+        <li class="w3-hide-medium w3-hide-small"><a href="index#about_us" class="w3-hover-white">About us</a></li>
+    </ul>
+
+    <!-- Sidenav -->
+    <nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+        <h4><b style="color:blue;letter-spacing:1px">Learn AngularJS</b></h4>
+        <a href="/angular" class="w3-hover-black">
+            <li>AngularJS Overview</li>
+        </a>
+        <a href="angular_introduction" class="w3-hover-black">
+            <li>AngularJS Introduction</li>
+        </a>
+        <a href="angular_directives" class="w3-hover-black">
+            <li>AngularJS Directives</li>
+        </a>
+        <a href="angular_modules" class="w3-hover-black">
+            <li>AngularJS Modules</li>
+        </a>
+        <a href="angular_expressions" class="w3-hover-black">
+            <li>AngularJS Expressions</li>
+        </a>
+        <a href="angular_scopes" class="w3-hover-black">
+            <li>AngularJS Scopes</li>
+        </a>
+        <a href="angular_forms#" class="w3-hover-black">
+            <li>AngularJS Forms</li>
+        </a>
+        <a href="angular_tables" class="w3-hover-black">
+            <li>AngularJS Tables</li>
+        </a>
+        <a href="angular_filters" class="w3-hover-black">
+            <li>AngularJS Filters</li>
+        </a>
+        <a href="angular_validation" class="w3-hover-black">
+            <li>AngularJS Validation</li>
+        </a>
+        <a href="angular_services" class="w3-hover-black">
+            <li>AngularJS Services</li>
+        </a>
+    </nav>
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+    <!--end sidenav-->
+    <div class="w3-main"
+        style="margin-left:250px;margin-top:-50px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <p>
+                <h1>AngularJS Forms</h1>
+                </p>
+                <p style="margin-top:-10px;text-indent:50px">AngularJS forms control <mark>input</mark>,
+                    <mark>select</mark>, <mark>textarea</mark> are ways for a user to enter data.
+                    Form and controls provide validation services, so that the user can be notified of invalid input
+                    before submitting a form.
+                    This provides a better user experience than server-side validation alone because the user gets
+                    instant feedback on how to correct the error.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top:-60px">
+        <div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+            &nbsp;</div>
+        <div class='w3-rest'>
+            <div class='w3-col l10 m12' id='main'>
+                <div class="w3-example" style="margin-top:-10px">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;div ng-controller="ExampleController"&gt;<br>
+                        &lt;form novalidate class="simple-form"&gt;<br>
+                        Name: &lt; input type="text" ng-model="user.name" &gt;<br>
+                        E-mail: &lt; input type="email" ng-model="user.email" &gt;<br>
+                        Gender: &lt; input type="radio" ng-model="user.gender" value="male" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" ng-model="user.gender" value="female"
+                        &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="button" ng-click="reset()" value="reset" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" ng-model="user.gender"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" ng-click="update(user)" value="Save"
+                        &gt;<br>
+                        &lt; /form &gt;<br>
+                        {{!-- &lt;pre&gt;user={{user | json}} &lt;/pre&gt;<br> --}}
+                        {{!-- &lt;pre&gt;master={{user | json}} &lt;/pre&gt;<br> --}}
+                        &lt;/div&gt;<br>
+                        &lt;script&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;angular.module('formExample', [])<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.controller('ExampleController', ['$scope',
+                        function($scope) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$scope.master = {};<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$scope.update = function(user) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$scope.master =
+                        angular.copy(user);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$scope.reset = function() {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$scope.user = angular.copy($scope.master);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$scope.reset();<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}]);<br>
+                        &lt;/script&gt;
+                    </div>
+                    <a target="_blank" class="w3-jo w3-margin-bottom" href="fourteen1">Run the file
+                        &raquo;</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="w3-main"
+        style="margin-left:250px;margin-top:-100px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <p style="text-indent:10px">The value of <mark>ngModel</mark> won't be set unless it passes validation
+                    for the input field.
+                    For example: inputs of type <mark>email</mark> must have a value in the form of
+                    <mark>user@domain</mark>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-main"
+        style="margin-left:250px;margin-top:-140px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+        <div class="w3-row w3-padding-64">
+            <div class="w3-twothird w3-container">
+                <p>
+                <h2>AngularJS Forms with CSS classes</h2>
+                </p>
+                <p style="margin-top:-10px;text-indent:50px">The following example uses the CSS to display validity of
+                    each form control. In the example both
+                    <mark>user.name</mark> and <mark>user.email</mark> are required, but are rendered with red
+                    background only after the input is blurred (loses focus). This ensures
+                    that the user is not distracted with an error until after interacting with the control, and failing
+                    to satisfy its validity.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:-60px">
+        <div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+            &nbsp;</div>
+        <div class='w3-rest'>
+            <div class='w3-col l10 m12' id='main'>
+                <div class="w3-example" style="margin-top:-10px">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;div ng-controller="ExampleController"&gt;<br>
+                        &lt;form novalidate class="simple-form"&gt;<br>
+                        Name: &lt; input type="text" ng-model="user.name" &gt;<br>
+                        E-mail: &lt; input type="email" ng-model="user.email" &gt;<br>
+                        Gender: &lt; input type="radio" ng-model="user.gender" value="male" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" ng-model="user.gender" value="female"
+                        &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="button" ng-click="reset()" value="reset" &gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" ng-model="user.gender"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" ng-click="update(user)" value="Save"
+                        &gt;<br>
+                        &lt; /form &gt;<br>
+                        {{!-- &lt;pre&gt;user={{user | json}} &lt;/pre&gt;<br> --}}
+                        {{!-- &lt;pre&gt;master={{user | json}} &lt;/pre&gt;<br> --}}
+                        &lt;/div&gt;<br>
+                        &lt;style type="text/css"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.css-form input.ng-invalid.ng-touched {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #FA787E;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.css-form input.ng-valid.ng-touched
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #78FA89;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &lt;/style&gt;
+                    </div>
+                    <a target="_blank" class="w3-jo w3-margin-bottom" href="fifteen1">Run the file &raquo;</a>
+                </div>
+                <hr>
+                <div class="nav">
+                    <div class="prev"><a class="chapter" href="angular_scopes">&laquo; Previous Page</a></div>
+                    <div class="next"><a class="chapter" href="angular_tables">Next Page&raquo;</a></div>
+                </div><br>
+            </div>
+        </div>
+    </div>
+    <!--end coding box-->
+    <script>
+        // Script to open and close the sidenav
+        function w3_open() {
+            document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+            document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+            document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

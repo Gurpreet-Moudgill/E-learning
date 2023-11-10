@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>HTML5 Web Workers</title>
+<meta name="website" content="http://www.vetripandi.vetbossel.in" />
+<meta name="author" content="vetripandi" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="HTML Tutorial for beginners - Learn HTML to develop  your website in simple and easy steps starting from its overview, basic tags, meta tags, attributes, formatting, phrase tags, comments, fonts, marquees, images, links, tables, frames, lists, layouts, colors, forms, backgrounds, style sheet, and javascript." />
+<meta name="keywords" content="vetripandi, HTML, Tutorial, beginners, develop, website, simple, easy, steps, starting, overview, basic tags, meta tags, attributes, formatting, phrase tags, comments, fonts, marquees, images, links, tables, frames, lists, layouts, colors, forms, backgrounds, style sheet, and javascript." />
+<link rel="SHORTCUT ICON" href="logo.png" />
+<link rel="stylesheet" href="first.css">
+<link rel="stylesheet" href="second.css">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="index" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="index#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="index#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="index#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="index#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">HTML5</b></h4>
+  <a href="html5" class="w3-hover-black"><li>HTML5 Overview</li></a>
+  <a href="html5_introduction" class="w3-hover-black"><li>HTML5 Introduction</li></a>
+  <a href="html5_elements" class="w3-hover-black"><li>HTML5 Elements</li></a>
+  <a href="html5_semantics" class="w3-hover-black"><li>HTML5 Semantics</li></a>
+  <a href="html5_migration" class="w3-hover-black"><li>HTML5 Migration</li></a>
+  <h4><b style="color:blue;letter-spacing:1px">HTML5 Media</b></h4>
+  <a href="html5_media" class="w3-hover-black"><li>HTML5 Media</li></a>
+  <a href="html5_audio" class="w3-hover-black"><li>HTML5 Audio</li></a>
+  <a href="html5_video" class="w3-hover-black"><li>HTML5 Video</li></a>
+  <a href="html5_youtube" class="w3-hover-black"><li>HTML5 YouTube</li></a>
+  <h4><b style="color:blue;letter-spacing:1px">HTML5 Graphics</b></h4>
+  <a href="html5_canvas" class="w3-hover-black"><li>HTML5 Canvas</li></a>
+  <a href="html5_svg" class="w3-hover-black"><li>HTML5 SVG</li></a>
+  <h4><b style="color:blue;letter-spacing:1px">HTML5 API's</b></h4>
+  <a href="html5_geolocation" class="w3-hover-black"><li>HTML5 Geolocation</li></a>
+  <a href="html5_drag_drop" class="w3-hover-black"><li>HTML5 Drag/Drop</li></a>
+  <a href="html5_web_workers#" class="w3-hover-black"><li>HTML5 Web Workers</li></a>
+  <a href="html5_local_storage" class="w3-hover-black"><li>HTML5 Local Storage</li></a>
+  <a href="html5_application_cache" class="w3-hover-black"><li>HTML5 Application Cache</li></a>
+  <a href="html5_serversent_events" class="w3-hover-black"><li>HTML Server-sent Events</li></a>
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+
+<div class="w3-main" style="margin-left:250px;margin-top:-60px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>HTML5 Web Workers</h1>
+	        <p style="margin-top:-10px">A web worker is a JavaScript running in the background, without affecting the performance of the page.</p>
+			<p>When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.</p>
+			<p>A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting 
+			the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+var w;<br>
+function startWorker() {<br>
+&nbsp;&nbsp;&nbsp;if(typeof(Worker) !== "undefined") {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(typeof(w) == "undefined") {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w = new Worker("demo_workers.js");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w.onmessage = function(event) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("result").innerHTML = event.data;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br>
+&nbsp;&nbsp;&nbsp;} else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers.";<br>
+&nbsp;&nbsp;&nbsp;}<br>
+}<br><br>
+function stopWorker() {<br>
+&nbsp;&nbsp;&nbsp;w.terminate();<br>
+&nbsp;&nbsp;&nbsp;w = undefined;<br>
+}<br>
+&lt;/script&gt;
+</div>
+{{!-- <a target="_blank" class="w3-jo w3-margin-bottom" href="tryit/nineteen">Run the file &raquo;</a> --}}
+</div><br>
+<div class="nav">
+<div class="prev"><a class="chapter" href="html5_drag_drop">&laquo; Previous Page</a></div>
+<div class="next"><a class="chapter" href="html5_local_storage">Next Page&raquo;</a></div>
+</div><hr>
+</div>
+</div>
+</div>
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+</html>

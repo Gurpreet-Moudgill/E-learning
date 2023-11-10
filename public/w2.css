@@ -1,0 +1,230 @@
+#leftmenu h2 {
+  font-size: 21px;
+  padding-left: 16px;
+  margin: -4px 0 4px 0;
+  width: 204px;
+}
+
+#leftmenu a {
+  display: block;
+  text-decoration: none;
+  padding: 2px 1px 1px 16px;
+  font-size: 15px;
+}
+
+#leftmenu a:hover {
+  background-color: #dddddd;
+  color: #000000;
+}
+
+#leftmenu a.active {
+  background-color: #dddddd;
+  color: #000000;
+  background-color: #cccccc;
+  color: #000000;
+  background-color: #008CBA;
+  background-color: #008CBA;
+  color: #ffffff;
+}
+
+#leftmenu {
+  width: 220px;
+  z-index: 9;
+}
+
+#leftmenu .w3-closebtn {
+  position: absolute;
+  right: 16px;
+  top: 0;
+}
+
+#main {
+  padding: 16px;
+}
+
+.w3-code {
+  border-left: 4px solid #008CBA !important;
+  border-left: 4px solid #008CBA !important;
+}
+
+@media (min-width: 1675px) {
+  #main {
+    width: 79%;
+  }
+}
+
+@media (max-width: 992px) {
+  #leftmenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 260px;
+    padding-top: 144px;
+  }
+
+  #leftmenu h2 {
+    font-size: 26px;
+    width: 100%;
+  }
+
+  #leftmenu a {
+    padding: 3px 2px 3px 24px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 993px) {
+  #leftmenu {
+    display: block !important;
+  }
+}
+
+div.chapter,
+div.nav {
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  overflow: hidden;
+}
+
+a.chapter:link {
+  color: #008CBA;
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.chapter:visited {
+  color: #008CBA;
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.chapter:hover {
+  color: #008CBA;
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a.chapter:active {
+  color: #008CBA;
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+div.chapter div.prev {
+  width: 40%;
+  float: left;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.chapter div.next {
+  width: 48%;
+  float: right;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+div.nav div.prev {
+  width: 22%;
+  float: left;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.nav div.home,
+div.nav div.video {
+  margin-left: 3%;
+  width: 46%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div.nav div.next {
+  width: 28%;
+  float: right;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.w3-jo,
+.w3-jo:link,
+.w3-jo:visited {
+  color: #FFFFFF;
+  background-color: #008CBA;
+  background-color: #008CBA;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.w3-jo:hover,
+.w3-jo:active {
+  background-color: #FFFFFF;
+  color: #008CBA;
+  color: #008CBA;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.w3-jo[href*="exercise.asp"] {
+  margin: 10px 5px 0 0;
+}
+
+@media screen and (max-width: 700px) {
+
+  .prev .chapter,
+  .next .chapter,
+  .home .chapter,
+  .video .chapter {
+    color: transparent !important;
+  }
+
+  .prev .chapter::after,
+  .next .chapter::after,
+  .home .chapter::after,
+  .video .chapter::after {
+    position: absolute !important;
+    color: #008CBA !important;
+    color: #008CBA !important;
+  }
+
+  .prev .chapter::after {
+    content: "\ab" !important;
+    left: 15px !important;
+    font-size: 30px !important;
+  }
+
+  .next .chapter::after {
+    content: "\bb" !important;
+    right: 15px !important;
+    font-size: 30px !important;
+  }
+
+  .home .chapter::after {
+    font-family: 'fontawesome';
+    font-size: 30px;
+    content: "\e800";
+    left: 47%;
+  }
+
+  .video .chapter::after {
+    content: "\f008";
+    left: 49%;
+    font-size: 24px;
+  }
+
+  .homeOperaMini .chapter::after {
+    content: "Home";
+    left: 47%;
+  }
+}

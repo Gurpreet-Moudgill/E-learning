@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<title>Codeigniter Security</title>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<meta name="description" content="CodeIgniter Tutorial - Learn CodeIgniter starting from Overview, Installing CodeIgniter, MVC Framework, Basic Concepts, Configuration, Working with Database, Libraries, Error Handling, File Uploading, Sending Email, Form Validation, Session Management, Flashdata, Tempdata, Cookie Management, Common Functions, Page Caching, Page Redirection, Application Profiling, Benchmarking, Adding JS and CSS, Internationalization, Security." /> 
+<meta name="keywords" content="CodeIgniter, Tutorial, Overview, Installing CodeIgniter, Application Architecture, MVC Framework, Basic Concepts, Configuration, Working with Database, Libraries, Error Handling, File Uploading, Sending Email, Form Validation, Session Management, Flashdata, Tempdata, Cookie Management, Common Functions, Page Caching, Page Redirection, Application Profiling, Benchmarking, Adding JS and CSS, Internationalization, Security." />
+<link rel="SHORTCUT ICON" href="logo.png" />
+<link rel="stylesheet" href="first.css">
+<link rel="stylesheet" href="second.css">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="third.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "arial", sans-serif}
+.w3-sidenav a,.w3-sidenav h4{padding:12px;}
+.w3-navbar a{padding-top:15px !important;padding-bottom:15px !important;}
+.w3-btn{border-radius:3px;float:left;width:185px;height:55px;margin-left:65px;margin-top:41px;letter-spacing:3px}
+.vetri{margin-left:200px;margin-top:-98.4%}
+</style>
+<body>
+
+<!-- Navbar -->
+<ul class="w3-navbar w3-theme w3-top w3-left-align w3-large" style="z-index:4;">
+  <li class="w3-opennav w3-right w3-hide-large">
+    <a class="w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="index" class="w3-theme-l1">Home</a></li>
+  <li class="w3-hide-small"><a href="index#web_technology" class="w3-hover-white">Web Technology</a></li>
+  <li class="w3-hide-small"><a href="index#projects" class="w3-hover-white">Projects</a></li>
+  <li class="w3-hide-small"><a href="index#technology_updates" class="w3-hover-white">Technology Updates</a></li>
+  <li class="w3-hide-medium w3-hide-small"><a href="index#about_us" class="w3-hover-white">About us</a></li>
+</ul>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-collapse w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="close menu">×</a>
+  <h4><b style="color:blue;letter-spacing:1px">Learn CodeIgniter</b></h4>
+  <a href="code" class="w3-hover-black"><li>CodeIgniter Overview</li></a>
+  <a href="codeigniter_introduction" class="w3-hover-black"><li>CodeIgniter Introduction</li></a>
+  <a href="codeigniter_mvc" class="w3-hover-black"><li>CodeIgniter MVC</li></a>
+  <a href="codeigniter_basics" class="w3-hover-black"><li>CodeIgniter Basics</li></a>
+  <a href="codeigniter_configuration" class="w3-hover-black"><li>CodeIgniter Configuration</li></a>
+  <a href="codeigniter_database" class="w3-hover-black"><li>CodeIgniter Connect DB</li></a>
+  <a href="codeigniter_libraries" class="w3-hover-black"><li>CodeIgniter Libraries</li></a>
+  <a href="codeigniter_file_uploading" class="w3-hover-black"><li>CodeIgniter File Uploading</li></a>
+  <a href="codeigniter_form_validation" class="w3-hover-black"><li>CodeIgniter Form validation</li></a>
+  <a href="codeigniter_session" class="w3-hover-black"><li>CodeIgniter Session</li></a>
+  <a href="codeigniter_cookie" class="w3-hover-black"><li>CodeIgniter Cookie</li></a>
+  <a href="codeigniter_security#" class="w3-hover-black"><li>CodeIgniter Security</li></a>
+  
+</nav>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+
+<div class="w3-main" style="margin-left:250px;margin-top:-50px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1>CodeIgniter Security</h1>
+	        <p style="margin-top:-10px">CodeIgniter comes with XSS filtering security. XSS means cross-site scripting. This filter will prevent any malicious JavaScript code or any other code 
+			that attempts to hijack cookie and do malicious activities. To filter data through the XSS filter, use the xss_clean() method as shown below.</p>
+			<p><mark>$data = $this->security->xss_clean($data);</mark></p>
+			<h2>SQL Injection Prevention</h2>
+			<p style="margin-top:-10px">SQL injection is an attack made on database query. In PHP, we are use mysql_real_escape_string() function to prevent this along with other 
+			techniques but CodeIgniter provides inbuilt functions and libraries to prevent this.</p>
+			<p>We can prevent SQL Injection in CodeIgniter in the following three ways:</p>
+			<p><li>Escaping Queries</li></p>
+			<p><li>Query Biding</li></p>
+			<p><li>Active Record Class</li></p>
+			<h2>Escaping Queries</h2>
+			<p style="margin-top:-10px"><mark>$this->db->escape()</mark> function automatically adds single quotes around the data and determines the data type so that it can escape only string data.</p>
+		</div>
+    </div>
+</div>
+
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+&lt;?php<br>
+&nbsp;&nbsp;&nbsp;$username = $this->input->post('username');<br>
+&nbsp;&nbsp;&nbsp;$query = 'SELECT * FROM subscribers_tbl WHERE user_name = '.<br>
+&nbsp;&nbsp;&nbsp;$this->db->escape($email);<br>
+&nbsp;&nbsp;&nbsp;$this->db->query($query);<br>
+?&gt;
+</div>
+</div><hr>
+</div>
+</div>
+</div>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>Query Biding</h2>
+			<p style="margin-top:-10px">In this example, the question mark(?) will be replaced by the array in the second parameter of query() function. The main advantage of building query this way 
+			is that the values are automatically escaped which produce safe queries. CodeIgniter engine does it for you automatically, so you do not have to remember it.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+&lt;?php<br>
+&nbsp;&nbsp;&nbsp;$sql = "SELECT * FROM some_table WHERE id = ? AND status = ? AND author = ?";<br>
+&nbsp;&nbsp;&nbsp;$this->db->query($sql, array(3, 'live', 'Rick'));<br>
+?&gt;
+</div>
+</div><hr>
+</div>
+</div>
+</div>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>Query Biding</h2>
+			<p style="margin-top:-10px">Using active records, query syntax is generated by each database adapter. It also allows safer queries, since the values escape automatically.</p>
+		</div>
+    </div>
+</div>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class='w3-rest'>
+<div class='w3-col l10 m12' id='main'>
+<div class="w3-example" style="margin-top:-10px">
+<div class="w3-code notranslate htmlHigh">
+&lt;?php<br>
+&nbsp;&nbsp;&nbsp;$this->db->get_where('subscribers_tbl',array <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;('status'=> active','email' => 'info@arjun.net.in'))<br>
+?&gt;
+</div>
+</div><hr>
+</div>
+</div>
+</div>
+<div class="w3-main" style="margin-left:250px;margin-top:-110px;font-family:Verdana,sans-serif;font-size:17px;line-height:2;letter-spacing:0.2px;lit:35px">
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+			<h2>Hiding PHP Errors</h2>
+			<p style="margin-top:-10px">In production environment, we often do not want to display any error message to the users. It is good if it is enabled in the
+			development environment for debugging purposes. These error messages may contain some information, which we should not show to the site users 
+			for security reasons.</p>
+			<h2>PHP Error Reporting Level</h2>
+			<p style="margin-top:-10px">Different environment requires different levels of error reporting. By default, development will show errors
+			but testing and live will hide them. There is a file called index.php in root directory of CodeIgniter, which is used for this purpose. 
+			If we pass zero as argument to error_reporting() function then that will hide all the errors.</p>
+			<h2>Database Error</h2>
+			<p style="margin-top:-10px">Even if you have turned off the PHP errors, MySQL errors are still open. You can turn this off in
+			application/config/database.php. Set the db_debug option in $db array to FALSE as shown below.</p>
+			<p><mark>$db['default']['db_debug'] = FALSE;</mark></p>
+			<h2>Error log</h2>
+			<p style="margin-top:-10px">Another way is to transfer the errors to log files. So, it will not be displayed to users on the site.
+			Simply, set the log_threshold value in $config array to 1 in application/cofig/config.php file as shown below.</p>
+			<p><mark>$config['log_threshold'] = 1;</mark></p>
+		</div>
+    </div>
+</div><br>
+<div style="margin-top:-60px">
+<div class='w3-col w3-slim' id='leftmenu' style="margin-left:40px;">
+&nbsp;</div>
+<div class="nav">
+<div class="prev"><a class="chapter" href="codeigniter_cookie">&laquo; Previous Page</a></div>
+</div><hr>
+</div>
+<script>
+// Script to open and close the sidenav
+function w3_open() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "block";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementsByClassName("w3-sidenav")[0].style.display = "none";
+    document.getElementsByClassName("w3-overlay")[0].style.display = "none";
+}
+</script>
+</body>
+</html>
