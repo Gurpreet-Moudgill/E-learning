@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-mongoose.connect("mongodb+srv://new:new@cluster0.57qjyvf.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect(mongodb+srv://new:new@cluster0.57qjyvf.mongodb.net/?retryWrites=true&w=majority)
     .then(() => {
         console.log("mongodb connceted")
 
