@@ -7,6 +7,7 @@ const collection = require("./mongodb")
 
 const tempelatePath = path.join(__dirname, "../tempelates/beginner-tutorial-website");
 app.use(express.static(path.join(__dirname, "../public")))
+const port = process.env.PORT || 3000;
 
 app.use(express.json())
 
@@ -496,6 +497,6 @@ app.get("/nodejs_introduction", (req, res) => {
 //     res.render("javascript_arrays");
 // })
 //
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("port connected");
 })
