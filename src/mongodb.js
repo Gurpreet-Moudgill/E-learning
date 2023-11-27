@@ -1,7 +1,6 @@
 const mongoose = require("mongoose")
 
-mongoose.connect("
-mongodb://mongo:45gaA--DcGHFc662--dfhGFeDbE51HeD@monorail.proxy.rlwy.net:45197")
+mongoose.connect("mongodb://mongo:45gaA--DcGHFc662--dfhGFeDbE51HeD@monorail.proxy.rlwy.net:45197")
     .then(() => {
         console.log("mongodb connceted")
 
