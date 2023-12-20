@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-mongoose.connect("mongodb://mongo:45gaA--DcGHFc662--dfhGFeDbE51HeD@monorail.proxy.rlwy.net:45197")
+mongoose.connect("mongodb+srv://next:next@cluster0.cvnyhjo.mongodb.net/?retryWrites=true&w=majority")
     .then(() => {
         console.log("mongodb connceted")
 
