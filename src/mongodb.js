@@ -6,8 +6,8 @@ mongoose.connect("mongodb+srv://next:next@cluster0.cvnyhjo.mongodb.net/?retryWri
 
     })
 
-    .catch(() => {
-        console.log("failed");
+    .catch((err) => {
+        console.log("failed", err);
     })
 
     const LogInSchema = new mongoose.Schema({
